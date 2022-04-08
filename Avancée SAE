@@ -1,0 +1,21 @@
+08/04
+Configuration DHCP + Nat partie virtuelle:
+
+J'ai configuré le DHCP et le NAT sur le routeur du réseau.
+Pour cela il suffit d'entrer les commandes suivantes dans le routeur.
+
+-conf t
+-interface fastEthernet 0/0
+-ip address 192.168.1.254 255.255.255.0
+-no sh
+-no shutdown
+-exit
+
+-ip dhcp pool toto
+-network 192.168.1.0 255.255.255.0
+-default-router 192.168.1.254
+-dns-server 192.168.1.254
+-class tata
+-address range 192.168.1.2 192.168.1.252
+
+Ensuite, on peut attribué une configuration a chaque pc automatiquement en entrant la commande dhclient sur chaque pc.
