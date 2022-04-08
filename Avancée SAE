@@ -19,3 +19,21 @@ Pour cela il suffit d'entrer les commandes suivantes dans le routeur.
 -address range 192.168.1.2 192.168.1.252
 
 Ensuite, on peut attribué une configuration a chaque pc automatiquement en entrant la commande dhclient sur chaque pc.
+
+Maintenant on configure le NAT sur le routeur.
+Pour cela on entre les commandes suivantes:
+
+-conf t
+-interface fastEthernet 0/0
+-ip nat inside
+-exit
+
+-interface fastEthernet 0/1
+-ip nat outside
+-exit
+
+-access-list 1 permit 192.168.1.0 0.0.0.255
+-ip nat pool MY_POOL 10.213.0.0 10.213.255.254 netmask 255.255.0.0
+-ip nat inside source list 1 pool MY_POOL
+-exit
+-write memory
