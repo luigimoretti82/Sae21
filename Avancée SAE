@@ -1,4 +1,4 @@
-08/04
+----- 08/04 -----
 Configuration DHCP + Nat partie virtuelle:
 
 J'ai configuré le DHCP et le NAT sur le routeur du réseau.
@@ -37,3 +37,10 @@ Pour cela on entre les commandes suivantes:
 -ip nat inside source list 1 pool MY_POOL
 -exit
 -write memory
+
+
+----- 15/04 -----
+
+Début configuration DNS sur routeur microtik.
+
+
