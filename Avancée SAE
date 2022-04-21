@@ -41,6 +41,15 @@ Pour cela on entre les commandes suivantes:
 
 ----- 15/04 -----
 
-Début configuration DNS sur routeur microtik sur la partie physique.
+Début configuration DNS (partie physique)
 
 
+----- 21/04 -----
+
+Suite configuration DNS + serveur Web
+Configuration des fichiers  etc/bind/named.conf.local
+                            etc/bind/named.conf.options
+                            etc/bind/db.DockerCoorporation.fr
+                            
+                            
+                            
