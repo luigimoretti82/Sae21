@@ -50,6 +50,27 @@ Suite configuration DNS + serveur Web
 Configuration des fichiers  etc/bind/named.conf.local
                             etc/bind/named.conf.options
                             etc/bind/db.DockerCoorporation.fr
-                            
-                            
-                            
+                           
+                                                       
+----- 22/04 -----                            
+
+Fin configuration DNS + serveur Web
+
+Configuration fichier /etc/bind/named.conf.local, on entre les lignes suivantes: (voir capture named_conf_local):
+
+zone "DockerCoorporation.fr" {
+         type master;
+         file "/etc/bind/db.DockerCoorporation.fr";
+};
+
+zone "6.214.10.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.DockerCooporation2";
+};
+
+Ensuite, on va dans le fichier /etc/bind.named.conf.options, et on change le forwarders en 8.8.8.8 (voir capture named_conf_options).
+On ne change rien au fichier default-zones.
+
+Une fois cela fait on entre dans le fichier etc/bind/db.DockerCoorporation.fr et on le configure tel que on le voit sur la capture db_DockerCoorporation.
+
+
