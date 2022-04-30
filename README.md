@@ -175,7 +175,7 @@ Maintenant il reste a configurer le fichier /etc/hosts et /etc/resolv.conf.<br>
 A présent on peut tester les configurations DNS et Web avec la commande dig et systemctl status apache2.
 <br>
 
-![img_reseau](status.png)
+![img_reseau](status.PNG)
 
 ![img_reseau](digverif2.png)
 
