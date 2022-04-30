@@ -102,7 +102,7 @@ Enfin, je finis par configurer le fichier db.DockerCoorporation.fr créé préc�
 Il est accèssible avec, nano /etc/bind/db.DockerCoorporation.fr <br>
 Dans la 3 ligne, on va changer l'adresse par défaut et mettre celle du site web de notre site et ensuite on entre une email. Cette ligne ne changera rien aux paramètres du DNS mais elle servira en cas de problème avec ce dernier pour que les utilisateurs contactent le gérant du DNS. <br>
 Ensuite on peut voir plusieurs paramètres qui configure le DNS mais dans notre cas il est inutile de les changer.<br>
-La ligne @ IN NS dns.LesGobelins.com, permet de dire que le serveur DNS s’appelle dns.DockerCoorporation.fr.
+La ligne @ IN NS dns.DockerCoorporation.fr, permet de dire que le serveur DNS s’appelle dns.DockerCoorporation.fr.
 <br>
 La ligne DNS IN A 10.214.16.1 indique ou se trouve le serveur DNS.
 <br> Les deux lignes en dessous en 194.199.227.80 indique l'adresse IP du serveur web de l'iut ici pour effectuer des tests, le résultats final sera montrés le jour d'après.
